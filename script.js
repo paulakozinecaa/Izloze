@@ -9,9 +9,11 @@ for (let i = 0; i < uzvaretajuSkaits; i++) { //jasak skaitit ar 0. jo tad ari 5 
     let rand = Math.random() * vardi.length;
     rand = Math.floor(rand); //noapalo skaitli uz leju
     let uzvaretajs = vardi[rand]; //izvada konsolee random vardus
+    let davanas = balvas[rand];
     rindas.innerHTML += `
     <tr>
         <td>${i + 1}</td>
         <td>${uzvaretajs}</td>
+        <td>${davanas}</td>
     </tr>`
 }
